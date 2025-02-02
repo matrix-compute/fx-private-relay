@@ -14,6 +14,7 @@ export type Props = {
 export const AddonData = (props: Props) => {
   return (
     <div
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       as="firefox-private-relay-addon-data"
       {...(props as any)}
       // #profile-main is used by the add-on to look up the API token.
