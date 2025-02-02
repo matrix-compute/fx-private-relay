@@ -1,4 +1,5 @@
 declare namespace JSX {
+  interface Element extends React.ReactElement {}
   interface IntrinsicElements {
     // By default TypeScript will mark custom elements as invalid;
     // this defines <firefox-private-relay-addon> (and -data) as equivalent
