@@ -49,7 +49,9 @@ const onlyThumbIndex = 0;
 
 export const BlockLevelSlider = (props: Props) => {
   const l10n = useL10n();
-  const trackRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(
+    null,
+  ) as React.RefObject<HTMLDivElement>;
   const gaEvent = useGaEvent();
   const numberFormatter = new SliderValueFormatter(l10n);
   const sliderSettings: Parameters<typeof useSliderState>[0] = {
@@ -303,7 +305,9 @@ type PromotionalTrackStopGhostProps = {
  */
 const PromotionalTrackStopGhost = (props: PromotionalTrackStopGhostProps) => {
   const overlayTriggerState = useOverlayTriggerState({});
-  const triggerRef = useRef<HTMLButtonElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(
+    null,
+  ) as React.RefObject<HTMLButtonElement>;
 
   const { triggerProps, overlayProps } = useOverlayTrigger(
     {
