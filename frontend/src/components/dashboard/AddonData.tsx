@@ -1,7 +1,7 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { AliasData } from "../../hooks/api/aliases";
 import { ProfileData } from "../../hooks/api/profile";
 import { RuntimeData } from "../../hooks/api/runtimeData";
+import "../types.d.ts";
 
 export type Props = {
   profile: ProfileData;
