@@ -14,9 +14,7 @@ export type Props = {
 
 export const AddonData = (props: Props) => {
   return (
-    <div
-      as="firefox-private-relay-addon-data"
-      {...(props as any)}
+    <firefox-private-relay-addon-data
       // #profile-main is used by the add-on to look up the API token.
       // TODO: Make it look for this custom element instead.
       id="profile-main"
@@ -33,6 +31,6 @@ export const AddonData = (props: Props) => {
           : "None"
       }
       data-premium-enabled="True"
-    ></div>
+    ></firefox-private-relay-addon-data>
   );
 };
